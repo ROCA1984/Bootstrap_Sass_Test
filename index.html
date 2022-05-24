@@ -4,21 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="estilos_rev1/custom.css">
     <title>Sass</title>
 </head>
 <body class="bg-dark">
+
     <div class="container my-4">
-        
-    <h1 class="text-primary">Bootstrap</h1>
-    <button class="btn btn-primary">Click</button>
-        <p class="h2 my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore dicta rem doloribus, fuga explicabo magni ut fugiat, natus perferendis voluptatem voluptates impedit animi maxime architecto! Repellendus aut incidunt delectus autem.</p>
-        <p class="bg-success my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore dicta rem doloribus, fuga explicabo magni ut fugiat, natus perferendis voluptatem voluptates impedit animi maxime architecto! Repellendus aut incidunt delectus autem.</p>
+          <h1 class="text-primary text-center my-5">Bootstrap 5 and Sass</h1>
+          <p class="h2 my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore dicta rem doloribus, fuga explicabo magni ut fugiat, natus perferendis voluptatem voluptates impedit animi maxime architecto! Repellendus aut incidunt delectus autem.</p>
+          <p class="bg-success my-4 p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore dicta rem doloribus, fuga explicabo magni ut fugiat, natus perferendis voluptatem voluptates impedit animi maxime architecto! Repellendus aut incidunt delectus autem.</p>
+          <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              Link with href
+          </a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Button with data-bs-target
+          </button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
 
     </div>
-    
+<!--RIGHT MENU-->
+    <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel text-white">Offcanvas right</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente voluptate sequi deserunt explicabo. Laborum deserunt voluptate, sed ea sunt ipsam facere explicabo, fuga eaque numquam dolores eligendi, vitae officiis.</p>
+        </div>
+    </div>
+<!--RIGHT MENU-->
+ 
+<!--LEFT MENU-->
+      <div class="offcanvas offcanvas-start bg-secondary" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="text-cyan-500">
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-primary dropdown-toggle" type="button"  id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another</a></li>
+              <li><a class="dropdown-item" href="#">Something</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<!--LEFT MENU-->
+
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.esm.min.js"></script>
 </body>
 </html>
-
-<!--CAPITULO 214-->
