@@ -35,31 +35,58 @@
 <!--RIGHT MENU-->
  
 <!--LEFT MENU-->
-      <div class="offcanvas offcanvas-start bg-secondary" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="text-cyan-500">
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-          </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-primary dropdown-toggle" type="button"  id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </button>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another</a></li>
-              <li><a class="dropdown-item" href="#">Something</a></li>
-            </ul>
-          </div>
-        </div>
+<div class="container-fluid">
+  <div class="offcanvas offcanvas-start bg-secondary" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="text-cyan-500">
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
       </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-primary dropdown-toggle" type="button"  id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another</a></li>
+          <li><a class="dropdown-item" href="#">Something</a></li>
+        </ul>
+      </div>
+
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="" class="nav-link dropdown-toggle" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Submenú</a>
+          <ul class="dropdown-menu" aria-labelledby="offcanvasNabvarDropdown">
+            <li> <a href="" class="dropdown-item">Action</a></li>
+            <li> <a href="" class="dropdown-item">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li> <a href="" class="dropdown-item">Something else</a></li>
+            <li> <a href="" class="dropdown-item">Action</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 <!--LEFT MENU-->
 
-    <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/bootstrap.min.js"></script>-->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.esm.min.js"></script>
+  <!-- <script src="js/bootstrap.esm.min.js"></script>-->
 </body>
 </html>
