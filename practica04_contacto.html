@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>PRACTICA 04 CONTACTO</title>
+</head>
+<body>
+    
+    <!--header-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">Navbar scroll</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/practica04_sass.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/practica04_servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/practica04_contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2 bg-primary" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!--header-->
+    <main class="bg-light container mt-n5">
+      
+      <h1 class="text-center py-5 display-6">CONTACTO</h1>  
+      <p class="lead text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quaerat natus ipsum, suscipit tenetur impedit fuga amet recusandae! Illum dolore quidem doloribus quo pariatur veritatis quam odit vitae, delectus exercitationem.</p>
+
+      <div class="pt-5">
+        <form class="row g-3 needs-validation" novalidate> 
+          <div class="col-md-4">
+            <label for="text1"class="form-label">Name</label>
+            <input type="text" id="text1" class="form-control" value="Mark" required>
+            <div class="valid-feedback">Correct!</div>
+            <div class="invalid-feedback">Please enter a valid name.</div>
+          </div>
+          <div class="col-md-4">
+            <label for="text2"class="form-label">Last name</label>
+            <input type="text" id="text2" class="form-control" value="Otto" required>
+            <div class="valid-feedback">Correct!</div>
+            <div class="invalid-feedback">Please enter a valid lastname</div>
+          </div>
+          <div class="col-md-4">
+            <label for="text3" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="iconoUserName">@</span>
+              <input type="text" id="text3" class="form-control" value="Username" required aria-describedby="iconoUserName">
+              <div class="valid-feedback">Correct!</div>
+              <div class="invalid-feedback">Please enter a valid username.</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="text4"class="form-label">City</label>
+            <input type="text" id="text4" class="form-control" value=""  required>
+            <div class="valid-feedback">Correct!</div>
+            <div class="invalid-feedback">Please enter a valid city.</div>
+          </div>
+          <div class="col-md-3">
+            <label for="text5"class="form-label">State</label>
+            <select id="text5" class="form-select" required>
+              <option value="" selected disabled>Choose...</option>
+              <option value="">...</option>
+            </select>
+            <div class="valid-feedback">Correct!</div>
+            <div class="invalid-feedback">Please enter a valid state.</div>
+          </div>
+          <div class="col-md-3">
+            <label for="text6" class="form-label">Zip Code</label>
+            <input type="text" id="text6" class="form-control" value="1240000" required>
+            <div class="valid-feedback">Correct!</div>
+            <div class="invalid-feedback">Please enter a valid zipcode.</div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" value="" id="text7" required>
+              <label for="text7" class="form-check-label">Acepto las codiciones de uso.</label>
+              <div class="valid-feedback">Correct!</div>
+              <div class="invalid-feedback">Please accept conditions.</div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 d-grid gap-2 mx-auto">
+            <button class="btn btn-outline-primary" type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="p-5">
+        <br>
+       </div>
+    </main>
+    <footer class="text-center bg-dark container-fluid text-white py-4">
+      <p class="lead">Lorem ipsum dolor sit, amet.</p>
+  </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
